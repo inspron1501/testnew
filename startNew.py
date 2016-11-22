@@ -9,3 +9,4 @@ logging.debug('This is a log message.')
 
 requestsArgs = {"test": "3", "test2": "two"}
 resOne = requests.get('http://httpbin.org/get', requestsArgs)
+parsed_string = json.loads(resOne.text)
